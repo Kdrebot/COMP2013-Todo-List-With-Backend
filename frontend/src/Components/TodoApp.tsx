@@ -110,7 +110,7 @@ export default function ToDoApp() {
     try {
       //We will send a delete request to the server
       //and add the id to the link to be used as params
-      await axios.delete(`http:/localhost:3000/data/${id}`);
+      await axios.delete(`http://localhost:3000/data/${id}`);
       setTodosList((prevList) => prevList.filter((entry) => entry.id !== id));
     } catch (error) {
       console.log(console.log(error));
